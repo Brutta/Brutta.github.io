@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mr.Horse BarberShop</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<header>
+		<h1>Mr.Horse BarberShop</h1>
+		<nav>
+			<ul>
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#equipo">Equipo</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#reservas">Reservas</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="inicio">
+		<h2>Bienvenidos a Barbería Mr.Horse</h2>
+		<p>¡Somos los expertos en cortes de pelo y afeitado! Visítanos y experimenta el mejor servicio en la ciudad.</p>
+		<p>Nos enorgullece ofrecer una experiencia de alta calidad a cada cliente, con cortes de pelo personalizados y atención al detalle. Ven y conoce a nuestro equipo.</p>
+	</section>
+	
+	<section id="equipo">
+		<h2>Conoce a nuestro equipo</h2>
+		
+		<div class="worker">
+			<img src="worker1.jpg" alt="Trabajador 1">
+			<h3>Nombre del Trabajador 1</h3>
+			<p>Breve biografía del trabajador 1.</p>
+			<h4>Servicios:</h4>
+			<ul>
+				<li>Servicio 1</li>
+				<li>Servicio 2</li>
+			</ul>
+		</div>
+		
+		<div class="worker">
+			<img src="worker2.jpg" alt="Trabajador 2">
+			<h3>Nombre del Trabajador 2</h3>
+			<p>Breve biografía del trabajador 2.</p>
+			<h4>Servicios:</h4>
+			<ul>
+				<li>Servicio 1</li>
+				<li>Servicio 3</li>
+			</ul>
+		</div>
+
+		<div class="worker">
+			<img src="worker3.jpg" alt="Trabajadora 3">
+			<h3>Nombre de la Trabajadora 3</h3>
+			<p>Breve biografía de la trabajadora 3.</p>
+			<h4>Servicios:</h4>
+			<ul>
+				<li>Servicio 4</li>
+				<li>Servicio 5</li>
+			</ul>
+		</div>
+
+		<div class="worker">
+			<img src="worker4.jpg" alt="Trabajadora 4">
+			<h3>Nombre de la Trabajadora 4</h3>
+			<p>Breve biografía de la trabajadora 4.</p>
+			<h4>Servicios:</h4>
+			<ul>
+				<li>Servicio 6</li>
+				<li>Servicio 7</li
+                    <section id="reservas">
+                        <h2>Agenda tu servicio</h2>
+                        <p>Por favor, completa el siguiente formulario para agendar tu servicio con nosotros:</p>
+                        <form>
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                    
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo" required>
+                    
+                            <label for="servicio">Servicio:</label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="" selected disabled>Selecciona un servicio</option>
+                                <option value="Corte de pelo">Corte de pelo</option>
+                                <option value="Afeitado">Afeitado</option>
+                                <option value="Manicura">Manicura</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                    
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                    
+                            <label for="hora">Hora:</label>
+                            <input type="time" id="hora" name="hora" required>
+                    
+                            <label for="comentario">Comentario:</label>
+                            <textarea id="comentario" name="comentario"></textarea>
+                    
+                            <input type="submit" value="Agendar">
+                        </form>
+                    </section>
+				</section>
+</body>
+</html>

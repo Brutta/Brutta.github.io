@@ -1,0 +1,139 @@
+/* Estilos para la página de la barbería */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 32px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav li:last-child {
+	margin-right: 0;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #cfd8dc;
+}
+
+main {
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+section h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+section p {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], select, input[type="datetime-local"] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #cfd8dc;
+	color: #333;
+}
+
+@media (min-width: 768px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header h1 {
+		font-size: 48px;
+	}
+
+	main {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	section {
+		flex-basis: calc(33.33% - 20px);
+		margin-right: 20px;
+	}
+
+	section:last-child {
+		margin-right: 0;
+	}
+
+	form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	form label {
+		flex-basis: 100%;
+	}
+
+	form label:nth-child(odd) {
+		padding-right: 10px;
+	}
+
+	form label:nth-child(even) {
+		padding-left: 10px;
+	}
+
+	form input[type="text"], form input[type="tel"], form input[type="email"], form select, form input[type="datetime-local"] {
+		flex-basis: calc(50% - 5px);
+	}
+
+	form input[type="submit"] {
+		flex-basis: 100%;
+	}
+}
